@@ -4,13 +4,14 @@ global.dfail('admin', m, conn)
 throw false
 }
 let pesan = args.join` `
-let oi = `
-_Ventas tumbado_
-_Venta de bots, plataformas de streaming, cuentas ff, teams, clanes, diamantes._ ${pesan}`
-let teks = `*BOT TUMBADO*
- ${oi}\n\n https://chat.whatsapp.com/BoaKj0UJXEI7xkR2F9E6Bl\n`
+let oi = `_*BOT TUMBADO*_
+
+*🎭 Ventas tumbado Venta de bots, plataformas de streaming, cuentas ff, teams, clanes, diamantes.* ${pesan}`
+let teks = `━━━━━━━━━━━━━━━━━━━━
+ ${oi}\n\n https://chat.whatsapp.com/BoaKj0UJXEI7xkR2F9E6Bl
+ ━━━━━━━━━━━━━━━━━━━━\n`
 for (let mem of participants) {
-teks += `• @${mem.id.split('@')[0]}\n`}
+teks += `⚜️ @${mem.id.split('@')[0]}\n`}
 teks += `ㅤㅤㅤㅤ𝑻𝒖𝒎𝒃𝒂𝒅𝒐𝑽𝒆𝒏𝒕𝒂𝒔 🥷🏼`
 conn.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, )
 }
